@@ -20,6 +20,9 @@
     <!-- Custom styles for this template -->
     <link href="./css/barebones.css" rel="stylesheet">
 
+    <!-- Style for the shopping cart menu -->
+    <link href="./css/shopping-cart.css" rel="stylesheet">
+
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
@@ -46,17 +49,55 @@
             <li><a href="order_status.html">Order Status</a></li>
             <li><a href="about.html">About</a></li>
           </ul>
+          <ul class="navbar-right">
+            <li><a href="#" id="cart"><i class="fa fa-shopping-cart"></i> Cart <span class="badge">3</span></a></li>
+          </ul> <!--end navbar-right -->
         </div><!--/.nav-collapse -->
       </div>
     </nav>
 
-    <div class="container">
+<div class="container">
+  <div class="shopping-cart">
+    <div class="shopping-cart-header">
+      <i class="fa fa-shopping-cart cart-icon"></i><span class="badge">3</span>
+      <div class="shopping-cart-total">
+        <span class="lighter-text">Total:</span>
+        <span class="main-color-text">$2,229.97</span>
+      </div>
+    </div> <!--end shopping-cart-header -->
 
+    <ul class="shopping-cart-items">
+      <li class="clearfix">
+        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/cart-item1.jpg" alt="item1" />
+        <span class="item-name">Sony DSC-RX100M III</span>
+        <span class="item-price">$849.99</span>
+        <span class="item-quantity">Quantity: 01</span>
+      </li>
+
+      <li class="clearfix">
+        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/cart-item2.jpg" alt="item1" />
+        <span class="item-name">KS Automatic Mechanic...</span>
+        <span class="item-price">$1,249.99</span>
+        <span class="item-quantity">Quantity: 01</span>
+      </li>
+
+      <li class="clearfix">
+        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/cart-item3.jpg" alt="item1" />
+        <span class="item-name">Kindle, 6" Glare-Free To...</span>
+        <span class="item-price">$129.99</span>
+        <span class="item-quantity">Quantity: 01</span>
+      </li>
+    </ul>
+
+    <a href="#" class="button">Checkout</a>
+  </div> <!--end shopping-cart -->
+</div> <!--end container -->
+
+    <div class="container">
       <div class="starter-template">
         <h1>Events</h1>
         <p class="lead">Barebones of website.<br> Hello World.</p>
       </div>
-
     </div><!-- /.container -->
 
 
@@ -68,5 +109,14 @@
     <script src="../../dist/js/bootstrap.min.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+
+    <script>
+    (function(){
+      $("#cart").on("click", function() {
+      $(".shopping-cart").fadeToggle( "fast");
+      });
+    })();
+    </script>
+
   </body>
 </html>
