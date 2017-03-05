@@ -1,17 +1,65 @@
-/*
-sky-color: #CAEBF2
-carbon-color: #A9A9A9
-watermelon-color: #FF3B3F
-neutral-color: #EFEFEF
-*/
+$main-color: #6394F8;
+$light-text: #ABB0BE;
 
 @import url(http://fonts.googleapis.com/css?family=Lato:300,400,700);
+
 @import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css);
 
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+body {
+  font: 14px/22px "Lato", Arial, sans-serif;
+  background: #6394F8;
+}
+
+.lighter-text {
+  color: #ABB0BE;
+}
+
+.main-color-text {
+  color: $main-color;
+}
+
+nav {
+  padding: 20px 0 40px 0;
+  background: #F8F8F8;
+  font-size: 16px;
+  
+  .navbar-left {
+    float: left;
+  }
+  
+  .navbar-right {
+    float: right;
+  }
+  ul {
+    
+    li {
+      display: inline;
+      padding-left: 20px;
+      a {
+        color: #777777;
+        text-decoration: none;
+        
+        &:hover {
+          color: black;
+        }
+      }
+    }
+  }
+}
+
+.container {
+  margin: auto;
+  width: 80%;
+}
+
 .badge {
-    background-color: #FF3B3F;
+    background-color: #6394F8;
     border-radius: 10px;
-    color: #EFEFEF;
+    color: white;
     display: inline-block;
     font-size: 12px;
     line-height: 1;
@@ -22,9 +70,9 @@ neutral-color: #EFEFEF
 }
 
 .shopping-cart {
-  margin: 16px 0;
+  margin: 20px 0;
   float: right;
-  background: #A9A9A9;
+  background: white;
   width: 320px;
   position: relative;
   border-radius: 3px;
@@ -32,7 +80,7 @@ neutral-color: #EFEFEF
   
   
   .shopping-cart-header {
-    border-bottom: 1px solid #A9A9A9;
+    border-bottom: 1px solid #E8E8E8;
     padding-bottom: 15px;
     
     .shopping-cart-total {
@@ -41,6 +89,7 @@ neutral-color: #EFEFEF
   }
   
   .shopping-cart-items {
+    
     padding-top: 20px;
 
       li {
@@ -49,7 +98,7 @@ neutral-color: #EFEFEF
 
     img {
       float: left;
-      margin-right: 10px;
+      margin-right: 12px;
     }
     
     .item-name {
@@ -59,14 +108,15 @@ neutral-color: #EFEFEF
     }
     
     .item-price {
-      color: #EFEFEF;
+      color: $main-color;
       margin-right: 8px;
     }
     
     .item-quantity {
-      color: white;
+      color: $light-text;
     }
-  } 
+  }
+   
 }
 
 .shopping-cart:after {
@@ -78,21 +128,21 @@ neutral-color: #EFEFEF
 	width: 0;
 	position: absolute;
 	pointer-events: none;
-	border-bottom-color: #A9A9A9;
-	border-width: 12px;
+	border-bottom-color: white;
+	border-width: 8px;
 	margin-left: -8px;
 }
 
 .cart-icon {
-  color: #FF3B3F;
-  font-size: 30px;
+  color: #515783;
+  font-size: 24px;
   margin-right: 7px;
   float: left;
 }
 
 .button {
-  background: #FF3B3F;
-  color:#EFEFEF;
+  background: $main-color;
+  color:white;
   text-align: center;
   padding: 12px;
   text-decoration: none;
@@ -102,7 +152,7 @@ neutral-color: #EFEFEF
   margin: 25px 0 15px 0;
   
   &:hover {
-    background: lighten(#FF3B3F, 3%);
+    background: lighten($main-color, 3%);
   }
 }
 
@@ -111,3 +161,5 @@ neutral-color: #EFEFEF
   display: table;
   clear: both;
 }
+
+
