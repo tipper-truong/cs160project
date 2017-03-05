@@ -14,7 +14,8 @@ neutral-color: #EFEFEF
 
 body {
   font: 14px/22px "Lato", Arial, sans-serif;
-  background: #A9A9A9;
+  color: ##A9A9A9;
+  background: #EFEFEF;
 }
 
 .header {
@@ -33,8 +34,9 @@ body {
 
 nav {
   padding: 20px 0 40px 0;
-  background: #F8F8F8;
+  background: white;
   font-size: 16px;
+  border-bottom: 1px dashed #FF3B3F;
 }
 nav .navbar-left {
   float: left;
