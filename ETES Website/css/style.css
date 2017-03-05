@@ -7,6 +7,7 @@ neutral-color: #EFEFEF
 
 @import url(http://fonts.googleapis.com/css?family=Lato:300,400,700);
 @import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css);
+
 *, *:before, *:after {
   box-sizing: border-box;
 }
@@ -14,6 +15,12 @@ neutral-color: #EFEFEF
 body {
   font: 14px/22px "Lato", Arial, sans-serif;
   background: #A9A9A9;
+}
+
+.header {
+    padding: 40px 15px;
+    text-align: center;
+    font: 25px "Lato", Arial, sans-serif;
 }
 
 .lighter-text {
@@ -35,6 +42,9 @@ nav .navbar-left {
 nav .navbar-right {
   float: right;
 }
+nav .navbar-left li a.active-page {
+  color: #FF3B3F;
+}
 nav ul li {
   display: inline;
   padding-left: 20px;
@@ -52,6 +62,8 @@ nav ul li a:hover {
   width: 80%;
 }
 
+
+/* Start Shopping Cart */
 .badge {
   background-color: #FF3B3F;
   border-radius: 10px;
@@ -126,8 +138,8 @@ nav ul li a:hover {
 }
 
 .button {
-  background: #FF3B3F;
-  color: white;
+  border: 2px solid #FF3B3F;
+  color: #FF3B3F;
   text-align: center;
   padding: 12px;
   text-decoration: none;
@@ -135,9 +147,12 @@ nav ul li a:hover {
   border-radius: 3px;
   font-size: 16px;
   margin: 25px 0 15px 0;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
 }
 .button:hover {
-  background: #729ef9;
+  background: #FF3B3F;
+  color: white;
 }
 
 .clearfix:after {
@@ -145,3 +160,15 @@ nav ul li a:hover {
   display: table;
   clear: both;
 }
+/* End Shopping Cart */
+
+
+/* Start Google Maps */
+  
+  /* Always set the map height explicitly to define the size of the div
+     * element that contains the map. */
+  #map {
+    height: 100%;
+  }
+
+/* End Google Maps */
