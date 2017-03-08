@@ -36,7 +36,7 @@ nav {
   padding: 20px 0 40px 0;
   background: white;
   font-size: 16px;
-  border-bottom: 1px dashed #FF3B3F;
+  border-bottom: 1px solid #FF3B3F;
 }
 nav .navbar-left {
   float: left;
