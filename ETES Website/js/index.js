@@ -82,3 +82,16 @@ $(document).ready(function(){
 		$(".text-color").css("color", newColor);
 	});
 });
+
+
+//List
+// This just increments the delay on each item
+
+$('.rolldown-list li').each(function () {
+  var delay = ($(this).index()/4) + 's';
+  $(this).css({
+      webkitAnimationDelay: delay,
+      mozAnimationDelay: delay,
+      animationDelay: delay
+  });
+});
