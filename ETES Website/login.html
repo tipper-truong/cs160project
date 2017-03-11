@@ -73,18 +73,58 @@
 </div> <!--end container -->
 
 
-  <form class="login">
-    <h1 class="login-title">Welcome back!</h1>
-    <input type="text" class="login-input" placeholder="Username" autofocus>
-    <input type="password" class="login-input" placeholder="Password">
-    <input type="submit" value="login" class="login-button">
-    <input type="submit" value="register" class="login-button">
-  </form><!-- /.container -->
+
+<!-- Start Login/Register Tabs -->
+<section class="lr">
+  <ul class="lr-tabs">
+    <li class="active">Login</li>
+    <li>Register</li>
+  </ul>
+
+  <ul class="lr-content">
+    <li class="active">
+      <div class="lr-wrapper">
+        <h2 class="text-color">Welcome Back</h2>
+        <form class="login">
+          <input type="text" class="login-input" placeholder="Username">
+          <input type="password" class="login-input" placeholder="Password">
+          <input type="submit" value="Login" class="login-button">
+        </form>
+      </div>
+    </li>
+    <li>
+      <div class="lr-wrapper">
+        <reg>
+        <h2 class="text-color">Please enter the following information:</h2>
+        <form class="register">
+          <ul class="reg-left">
+              <li><input type="text" class="register-input" placeholder="First Name"></li>
+              <li><input type="text" class="register-input" placeholder="Last Name"></li>
+              <li><input type="text" class="register-input" placeholder="Email"></li>
+              <li><input type="text" class="register-input" placeholder="Username"></li>
+              <li><input type="password" class="register-input" placeholder="Password"></li>
+              <li><input type="password" class="register-input" placeholder="Confirm Password"></li>
+          </ul>
+          <ul class="reg-right">
+              <li><input type="text" class="register-input" placeholder="Street"></li>
+              <li><input type="text" class="register-input" placeholder="Apartment/Suite/Building"></li>
+              <li><input type="text" class="register-input" placeholder="City"></li>
+              <li><input type="text" class="register-input" placeholder="State"></li>
+              <li><input type="text" class="register-input" placeholder="Zip Code"></li>
+              <li><input type="submit" value="Submit" class="register-button"></li>
+            </ul>
+          </form>
+        </reg>
+      </div>
+    </li>
+  </ul>
+</section>
+<!-- End Login/Register Tabs -->
 
 
   <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
 
-    <script src="js/index.js"></script>
+    <script src="js/login.js"></script>
 
 </body>
 </html>
