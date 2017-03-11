@@ -3,6 +3,14 @@ ETES Documentation
 
 ## MongoDB
 
+### Layout
+
+- etes
+    + events
+    + users
+
+Everything will be done under `etes` database
+
 ### General
 
 First use ssh or putty to connect to server. Then connect to database.
