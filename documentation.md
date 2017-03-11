@@ -5,7 +5,7 @@ ETES Documentation
 
 ### General
 
-Connecting to database
+First use ssh or putty to connect to server. Then connect to database.
 
 ```bash
 $ mongo --host localhost
