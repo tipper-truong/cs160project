@@ -332,11 +332,6 @@ neutral-color: #EFEFEF
   margin-right: 10px;
 }
 
-.tab__content > li .content__wrapper ul > .event .event-img:hover {
-  height: 175px;
-  width: 240px;
-}
-
 .tab__content > li .content__wrapper ul > .event .event-name {
   font-size: 18px;
   color: black;
